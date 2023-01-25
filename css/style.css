@@ -1,0 +1,39 @@
+.square {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background-color: aquamarine;
+  animation: SquareAnimation2 3s infinite cubic-bezier(0.06, 0.76, 0.88, 0.13);
+  animation-delay: 3s;
+}
+
+@keyframes SquareAnimation {
+  from {
+    left: 0px;
+    background-color: aquamarine;
+    border-radius: 0;
+  }
+
+  to {
+    left: 500px;
+    background-color: blueviolet;
+    border-radius: 50%;
+  }
+}
+
+@keyframes SquareAnimation2 {
+  0% {
+    background-color: aquamarine;
+    left: 0;
+  }
+
+  50% {
+    background-color: brown;
+    left: 500px;
+  }
+
+  100% {
+    background-color: aquamarine;
+    left: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.square {
+  height: 80px;
+  width: 80px;
+  background-color: aquamarine;
+  position: absolute;
+  animation: AnimationSquare 3s infinite ease-in-out;
+}
+
+.delay {
+  animation-delay: 1s;
+}
+
+@keyframes AnimationSquare {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
