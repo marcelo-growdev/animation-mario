@@ -1,3 +1,6 @@
+body {
+  background: url("../images/background.webp") top center/cover no-repeat;
+}
 .cano {
   max-width: 90vw;
   bottom: 0;
@@ -6,28 +9,84 @@
 }
 
 .mario {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   width: 250px;
-  bottom: 0;
-  left: 20px;
-  animation: AnimationMario 5s infinite;
+  bottom: 0px;
+  left: 42px;
+  animation: AnimationMario 10s infinite ease;
 }
 
 @keyframes AnimationMario {
   0% {
     opacity: 0;
+    bottom: 0px;
+    left: 42px;
+  }
+
+  10% {
+    opacity: 1;
+    bottom: 220px;
+    left: 42px;
+  }
+
+  20% {
+    opacity: 0;
+    bottom: 0px;
+    left: 42px;
+  }
+
+  25% {
+    opacity: 0;
+    bottom: 0px;
+    left: 372px;
+  }
+
+  35% {
+    opacity: 1;
+    bottom: 220px;
+    left: 372px;
+  }
+
+  45% {
+    opacity: 0;
+    bottom: 0px;
+    left: 372px;
   }
 
   50% {
     opacity: 0;
-    bottom: 0;
+    bottom: 0px;
+    left: 692px;
   }
 
-  100% {
-    width: 250px;
+  60% {
     opacity: 1;
-    display: block;
-    bottom: 200px;
+    bottom: 220px;
+    left: 692px;
+  }
+
+  70% {
+    opacity: 0;
+    bottom: 0px;
+    left: 692px;
+  }
+
+  75% {
+    opacity: 0;
+    bottom: 0px;
+    left: 1022px;
+  }
+
+  85% {
+    opacity: 1;
+    bottom: 220px;
+    left: 1022px;
+  }
+
+  90% {
+    opacity: 0;
+    bottom: 0px;
+    left: 1022px;
   }
 }
